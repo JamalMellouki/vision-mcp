@@ -1,0 +1,29 @@
+[package]
+name = "vision-browser"
+description = "Capture client-rendered pages as Vision snapshots."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[lib]
+name = "vision_browser"
+path = "src/lib.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+base64 = "0.22"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2.0.21"
+tungstenite = "0.30.0"
+url = "2.5.8"
+vision = { workspace = true }

@@ -1,0 +1,18 @@
+{
+  "pages": [
+    {
+      "path": "corpus/smoke.html",
+      "viewport": [1280, 800],
+      "tags": ["h1", "table", "input"],
+      "ids": ["name"],
+      "unsupported": ["property: border-collapse", "property: direction"]
+    },
+    {
+      "path": "corpus/react-ssr.html",
+      "viewport": [1280, 800],
+      "tags": ["header", "main", "article"],
+      "ids": ["q"],
+      "unsupported": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+name: Bug report
+description: Report a rendering, layout, audit, or CLI defect.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reduce the report to one HTML file and one stylesheet when possible.
+        A page that needs a local server should be described as such.
+  - type: input
+    id: version
+    attributes:
+      label: Vision version
+      description: Output of `vision --version`.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Operating system, architecture, and Rust version.
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: HTML and CSS
+      description: Paste the smallest document that shows the problem.
+      render: html
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: The exact command, viewport, and device pixel ratio.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the PNG, `vision inspect` output, or `vision audit` output.
+    validations:
+      required: true

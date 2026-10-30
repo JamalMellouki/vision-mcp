@@ -1,0 +1,215 @@
+html,
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+section,
+article,
+header,
+footer,
+nav,
+main,
+aside,
+form,
+fieldset,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+blockquote,
+pre,
+hr {
+    display: block;
+}
+
+head,
+title,
+style,
+script,
+meta,
+link,
+base,
+template {
+    display: none;
+}
+
+span,
+a,
+strong,
+em,
+b,
+i,
+code,
+small,
+label,
+abbr,
+cite,
+q,
+sub,
+sup,
+br {
+    display: inline;
+}
+
+img {
+    display: inline-block;
+}
+
+html {
+    display: block;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 1.33em 0;
+}
+
+p {
+    margin: 1em 0;
+}
+
+ul,
+ol {
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+li {
+    display: list-item;
+}
+
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+strong,
+b {
+    font-weight: bold;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+pre,
+code {
+    font-family: monospace;
+}
+
+pre {
+    white-space: pre;
+    margin: 1em 0;
+}
+
+hr {
+    border: 1px solid #cccccc;
+    margin: 0.5em 0;
+}
+
+table {
+    display: table;
+}
+
+caption {
+    display: block;
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+tr {
+    display: table-row;
+}
+
+td,
+th {
+    display: table-cell;
+}
+
+th {
+    font-weight: bold;
+}
+
+button,
+input,
+select,
+textarea {
+    display: inline-block;
+    background-color: #efefef;
+    border: 1px solid #767676;
+    padding: 3px 8px;
+    color: #000000;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input,
+textarea {
+    background-color: #ffffff;
+    width: 200px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    width: 1.4em;
+    height: 1.4em;
+    padding: 0;
+}
+
+textarea {
+    height: 60px;
+}
+
+button {
+    text-align: center;
+}
+
+select {
+    width: 160px;
+}
+
+input[type=hidden] {
+    display: none;
+}

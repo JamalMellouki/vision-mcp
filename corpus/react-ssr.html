@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vision React SSR fixture</title>
+<style>
+:root { --ink: #172033; --muted: #5a6478; --line: #d8deea; --brand: #3157d5; }
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: #f5f7fb; font: 16px/1.5 system-ui, sans-serif; }
+.page { min-height: 100vh; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 18px 28px; background: #fff; border-bottom: 1px solid var(--line); }
+.brand { font-weight: 700; font-size: 20px; }
+.nav { display: flex; gap: 18px; }
+.nav a { color: var(--muted); text-decoration: none; }
+.nav a:hover { color: var(--brand); }
+.content { max-width: 1120px; margin: 0 auto; padding: 32px 28px 56px; }
+.hero { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 28px; }
+.eyebrow { margin: 0 0 8px; color: var(--brand); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.15; }
+.lede { margin: 0; color: var(--muted); max-width: 620px; }
+.search { display: flex; gap: 8px; align-items: end; }
+.search label { display: grid; gap: 4px; font-size: 13px; color: var(--muted); }
+input { min-width: 210px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; }
+button { padding: 10px 14px; border: 0; border-radius: 8px; color: #fff; background: var(--brand); font: inherit; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.card { display: flex; flex-direction: column; gap: 8px; min-height: 150px; padding: 20px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.card h2 { margin: 0; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); }
+.card .action { margin-top: auto; align-self: start; background: #172033; }
+.card-blue { border-top: 4px solid #3157d5; }
+.card-green { border-top: 4px solid #16836b; }
+.card-amber { border-top: 4px solid #c47b16; }
+@media (max-width: 760px) {
+  .topbar, .hero { align-items: stretch; flex-direction: column; }
+  .grid { grid-template-columns: 1fr; }
+  .nav { gap: 12px; }
+}
+</style>
+</head>
+<body><div class="page"><header class="topbar"><div class="brand">Vision React fixture</div><nav class="nav"><a href="#one">Overview</a><a href="#two">Activity</a><a href="#three">Settings</a></nav></header><main class="content"><section class="hero"><div><p class="eyebrow">SSR output</p><h1>React rendered on the server</h1><p class="lede">This HTML is produced by react-dom/server and rendered by Vision without running JavaScript.</p></div><form class="search" action="#" method="get"><label for="q">Search</label><input id="q" placeholder="Type here" name="q"/><button type="submit">Go</button></form></section><section class="grid" aria-label="Cards"><article class="card card-blue"><h2>Layout</h2><p>Grid and flex are common in React output.</p><button type="button" class="action">Open</button></article><article class="card card-green"><h2>Fonts</h2><p>Custom fonts and icons must resolve locally.</p><button type="button" class="action">Open</button></article><article class="card card-amber"><h2>Forms</h2><p>Inputs, labels, and buttons need real interaction.</p><button type="button" class="action">Open</button></article></section></main></div></body>
+</html>

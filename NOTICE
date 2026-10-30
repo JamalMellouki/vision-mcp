@@ -1,0 +1,12 @@
+Vision MCP
+Copyright (C) 2026 Mellouki Jamal
+
+Vision MCP is released under the Apache License, Version 2.0. See LICENSE.
+
+This product includes software developed by third parties. Their licenses are
+recorded in the dependency metadata and reproduced in the source distributions
+where required.
+
+resvg and usvg are licensed under Apache-2.0 OR MIT. cssparser is licensed under
+the Mozilla Public License 2.0. Vision uses these as unmodified dependencies and
+does not embed their source.

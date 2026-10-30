@@ -1,0 +1,30 @@
+[package]
+name = "vision-mcp"
+description = "MCP server exposing Vision rendering, inspection, auditing, and sessions."
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+documentation.workspace = true
+keywords.workspace = true
+categories.workspace = true
+
+[lib]
+name = "vision_mcp"
+path = "src/lib.rs"
+
+[[bin]]
+name = "vision-mcp"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+vision = { workspace = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.22"

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Vision</title>
+  <rect width="128" height="128" rx="28" fill="#0f172a"/>
+  <path d="M20 64c10-17 25-26 44-26s34 9 44 26c-10 17-25 26-44 26S30 81 20 64Z" fill="none" stroke="#38bdf8" stroke-width="5"/>
+  <circle cx="64" cy="64" r="15" fill="#e2e8f0"/>
+  <circle cx="64" cy="64" r="6" fill="#0f172a"/>
+  <path d="M44 93h40" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+</svg>
