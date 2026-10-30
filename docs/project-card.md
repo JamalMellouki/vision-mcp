@@ -15,7 +15,7 @@ browser, or Playwright.
 | **License** | Apache-2.0 |
 | **Core** | Rust, no browser engine |
 | **Footprint** | Alpha binaries around 6 MB |
-| **Platforms** | Linux x86_64/ARM64, macOS x86_64/ARM64, Windows x86_64 |
+| **Platforms** | Linux x86_64/ARM64 and Windows x86_64 prebuilt; macOS from source |
 | **Primary users** | Coding agents, low-resource developers, CI/UI maintainers |
 
 ## The problem

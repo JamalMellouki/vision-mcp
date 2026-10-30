@@ -91,12 +91,13 @@ contain a product application or a remote API dependency.
 
 ## Platform matrix
 
-CI builds and tests the workspace on Linux, macOS, and Windows. Release
-automation produces:
+CI tests the workspace on Linux and Windows. Release automation produces:
 
 - Linux x86_64 and ARM64;
-- macOS x86_64 and ARM64;
-- Windows x86_64.
+- Windows x86_64;
+- macOS from source. Hosted macOS runners were unavailable for the alpha, so
+  prebuilt macOS assets are not published yet and macOS is not a blocking CI
+  target.
 
 The core targets low-memory Linux and Termux-class devices. The optional
 Chromium adapter is not expected to run on the smallest devices; it is a

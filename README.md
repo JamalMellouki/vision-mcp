@@ -83,9 +83,9 @@ agents:
 ### Prebuilt alpha
 
 Download the archive for your platform from the
-[latest release](https://github.com/JamalMellouki/vision-mcp/releases). The release
-workflow builds Linux x86_64/ARM64, macOS x86_64/ARM64, and Windows x86_64
-artifacts.
+[latest release](https://github.com/JamalMellouki/vision-mcp/releases). The alpha
+ships Linux x86_64/ARM64 and Windows x86_64 archives. macOS builds from source;
+prebuilt macOS assets are not part of this alpha.
 
 ### Build from source
 

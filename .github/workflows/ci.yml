@@ -34,8 +34,11 @@ jobs:
   test:
     strategy:
       fail-fast: false
+      # macOS is intentionally excluded from the blocking matrix until hosted
+      # macOS runners are available to this repository. It remains supported
+      # from source; see docs/compatibility.md.
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
